@@ -1,6 +1,6 @@
 # Python e Arquivos do Computador
 
-# :label: Descrição do projeto
+# Descrição do projeto
 
 Esse projeto demonstra uma empresa que tem 18 lojas espalhadas por todo o Brasil e divididas em 5 estados diferentes:
 - RJ
@@ -19,7 +19,7 @@ Obs.: O programa não envia por e-mail, ele deixa todos os arquivos em uma pasta
 
 Ou seja separação de todos os arquivos de forma que cada arquivo esteja na pasta do estado correspondente aquele arquivo.
 
-# 🎲 Instalações e Módulos (Anaconda Prompt)
+# Instalações e Módulos (Anaconda Prompt)
 
 - Para pegar o nome de um arquivo como um texto no pathlib, você pode usar Path.name ou arquivo.name:
 
