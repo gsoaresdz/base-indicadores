@@ -1,4 +1,4 @@
-# :sparkles: Python e Arquivos do Computador
+# Python e Arquivos do Computador
 
 # :label: Descrição do projeto
 
