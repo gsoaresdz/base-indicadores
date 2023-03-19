@@ -1,36 +1,33 @@
 # Python e Arquivos do Computador
 
-# Descrição do projeto
+Este projeto utiliza a biblioteca pathlib e shutil para organizar arquivos de lojas por estados em pastas específicas.
 
-Esse projeto demonstra uma empresa que tem 18 lojas espalhadas por todo o Brasil e divididas em 5 estados diferentes:
-- RJ
-- SP
-- MG
-- GO
-- AM
+# Dependências
 
-Todo trimestre, são calculados os indicadores de cada funcionário de cada loja e esses indicadores são armazenados em um arquivo em Excel.
+Este projeto não possui dependências externas além das bibliotecas padrão do Python.
 
-Cada estado tem 1 Gerente Geral responsável por todas as lojas daqueles estados.
+# Execução
 
-Realizada uma automação para enviar para cada Gerente Geral todas as bases de indicadores correspondentes às lojas que ele é responsável.
+Execute o script com o seguinte comando:
 
-Obs.: O programa não envia por e-mail, ele deixa todos os arquivos em uma pasta única para cada Gerente, ou seja, para cada estado.
-
-Ou seja separação de todos os arquivos de forma que cada arquivo esteja na pasta do estado correspondente aquele arquivo.
-
-# Instalações e Módulos (Anaconda Prompt)
-
-- Para pegar o nome de um arquivo como um texto no pathlib, você pode usar Path.name ou arquivo.name:
-
-```bash
-caminho = Path('Pasta/Arquivo.csv')
-print(caminho.name) -> resposta: 'Arquivo.csv'
+```
+python main.py
 ```
 
-- Para as ações de copiar e colar arquivo, até conseguimos fazer com os módulos os e pathlib, mas é mais difícil e com maior margem de erro. MAS, existe o módulo shutil para ajudar nisso:
+# Funcionamento
 
-```bash
-import shutil
-from pathlib import Path
-```
+O script seguirá os seguintes passos:
+
+1. Importar as bibliotecas necessárias.
+2. Criar uma lista de estados para os quais serão criadas pastas.
+3. Criar pastas para cada estado dentro da pasta Arquivos_Lojas.
+4. Listar os arquivos presentes na pasta Arquivos_Lojas.
+5. Mover os arquivos CSV para a pasta do estado correspondente, de acordo com o nome do arquivo.
+
+# Estrutura do Projeto
+
+- main.py: Contém o código principal do projeto.
+
+# Instruções para o usuário
+
+Certifique-se de que os arquivos CSV que você deseja organizar estejam na pasta Arquivos_Lojas antes de executar o script. Os arquivos devem ter os nomes no seguinte formato: <nome_da_loja>-<estado>.csv. Por exemplo, Loja01-RJ.csv. Ao executar o script, os arquivos serão movidos para as pastas correspondentes aos estados.
