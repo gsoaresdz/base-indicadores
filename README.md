@@ -30,4 +30,4 @@ O script seguirá os seguintes passos:
 
 # Instruções para o usuário
 
-Certifique-se de que os arquivos CSV que você deseja organizar estejam na pasta Arquivos_Lojas antes de executar o script. Os arquivos devem ter os nomes no seguinte formato: <nome_da_loja>-<estado>.csv. Por exemplo, Loja01-RJ.csv. Ao executar o script, os arquivos serão movidos para as pastas correspondentes aos estados.
+Certifique-se de que os arquivos CSV que você deseja organizar estejam na pasta `Arquivos_Lojas` antes de executar o script. Os arquivos devem ter os nomes no seguinte formato: `<nome_da_loja>-<estado>.csv`. Por exemplo, `Loja01-RJ.csv`. Ao executar o script, os arquivos serão movidos para as pastas correspondentes aos estados.
