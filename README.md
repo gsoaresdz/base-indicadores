@@ -11,7 +11,7 @@ Este projeto não possui dependências externas além das bibliotecas padrão do
 Execute o script com o seguinte comando:
 
 ```
-python main.py
+python baseIndicadores.ipynb
 ```
 
 # Funcionamento
@@ -26,7 +26,7 @@ O script seguirá os seguintes passos:
 
 # Estrutura do Projeto
 
-- main.py: Contém o código principal do projeto.
+- baseIndicadores.ipynb: Contém o código principal do projeto.
 
 # Instruções para o usuário
 
