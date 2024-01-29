@@ -1,33 +1,37 @@
 # Python e Arquivos do Computador
 
-Este projeto utiliza a biblioteca pathlib e shutil para organizar arquivos de lojas por estados em pastas específicas.
+Este projeto utiliza Python para organizar arquivos de lojas por estados em pastas específicas. Ele é ideal para quem precisa gerenciar arquivos de forma automatizada, distribuindo-os em pastas de acordo com a sua localização geográfica (estados brasileiros).
 
-# Dependências
+### **Regra de Negócio**
 
-Este projeto não possui dependências externas além das bibliotecas padrão do Python.
+O script em Python identifica os arquivos **`.csv`** relacionados a diferentes lojas e os distribui em pastas correspondentes ao estado de cada loja. A identificação do estado é feita pelo nome do arquivo. Por exemplo, um arquivo nomeado "dados_loja_RJ.csv" será movido para a pasta correspondente ao Rio de Janeiro (RJ).
 
-# Execução
+### **Passos Executados pelo Código**
 
-Execute o script com o seguinte comando:
+1. **Criação de Pastas para os Estados**: Pastas são criadas para cada estado especificado (RJ, SP, MG, GO, AM).
+2. **Listagem de Arquivos**: O script lista todos os arquivos no diretório especificado.
+3. **Distribuição dos Arquivos**: Os arquivos **`.csv`** são distribuídos nas pastas dos respectivos estados com base em seu nome.
 
-```
-python baseIndicadores.ipynb
-```
+## **Configuração do Ambiente**
 
-# Funcionamento
+### **Versão do Python**
 
-O script seguirá os seguintes passos:
+Este projeto foi desenvolvido com Python 3.8. É recomendável usar esta versão ou uma mais recente para garantir a compatibilidade.
 
-1. Importar as bibliotecas necessárias.
-2. Criar uma lista de estados para os quais serão criadas pastas.
-3. Criar pastas para cada estado dentro da pasta Arquivos_Lojas.
-4. Listar os arquivos presentes na pasta Arquivos_Lojas.
-5. Mover os arquivos CSV para a pasta do estado correspondente, de acordo com o nome do arquivo.
+### **Bibliotecas e Módulos Necessários**
 
-# Estrutura do Projeto
+- **`pathlib`**: Para manipulação de caminhos de arquivos e diretórios de forma orientada a objetos.
+- **`shutil`**: Para operações de alto nível em arquivos e coleções de arquivos.
 
-- baseIndicadores.ipynb: Contém o código principal do projeto.
+### **Instalação de Bibliotecas**
 
-# Instruções para o usuário
+As bibliotecas necessárias são parte da biblioteca padrão do Python. Portanto, não é necessário instalar bibliotecas adicionais.
 
-Certifique-se de que os arquivos CSV que você deseja organizar estejam na pasta `Arquivos_Lojas` antes de executar o script. Os arquivos devem ter os nomes no seguinte formato: `<nome_da_loja>-<estado>.csv`. Por exemplo, `Loja01-RJ.csv`. Ao executar o script, os arquivos serão movidos para as pastas correspondentes aos estados.
+### **IDE Recomendada**
+
+Qualquer IDE que suporte Python pode ser usada. Recomendamos o uso do Visual Studio Code ou PyCharm para um melhor suporte e facilidade de uso.
+
+## **Estrutura do Projeto**
+
+- **`Arquivos_Lojas/`**: Pasta raiz onde os arquivos das lojas são inicialmente armazenados.
+- **`Arquivos_Lojas/<Estado>/`**: Pastas para cada estado (RJ, SP, MG, GO, AM), onde os arquivos relevantes são movidos.
